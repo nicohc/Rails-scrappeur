@@ -1,3 +1,5 @@
+require 'open-uri'
+
 class ScrapCrypto
 
   def initialize
@@ -15,7 +17,7 @@ class ScrapCrypto
 
     @currencies_table = Hash[@currencies.zip(@rates)]
     #Associe à chaque monnaie sa valeur sous forme de arrays
-
+    return @currencies_table
   end
 
   def perform
