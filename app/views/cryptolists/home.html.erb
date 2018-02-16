@@ -1,0 +1,18 @@
+<h1>Hello</h1>
+
+<p>Vous cherchez le cours d'une cryptomonnaie ?</p>
+<p>Entrez son nom dans le champ suivant :
+</p>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+    <%= form_tag (root_path) do %>
+      <%= label_tag 'monnaie', "Cryptomonnaie :" %>
+      <%= text_field_tag 'monnaie' %>
+    <br><br>
+    <%= submit_tag "Chercher !"%>
+    <% end %>
+
+  </div>
+</div>
